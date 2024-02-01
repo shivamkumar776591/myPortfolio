@@ -1,0 +1,109 @@
+
+
+.navbar {
+    height: 5rem;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background: rgb(30, 30, 30);
+  }
+  
+  .navmenu {
+    margin: 1rem; /* Adjust margin for smaller screens */
+    cursor: pointer;
+    margin-left:4rem;
+    
+    
+    text-decoration: none;
+    color: white; /* Change text color */
+  }
+  
+  .navmenu.active {
+    border-bottom: 2px solid yellow;
+  }
+
+  #logo{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    margin: .5rem;
+   
+  }
+  #logo p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      height: auto; /* Let the height adjust based on content */
+      padding: 1rem;
+      font-family: 'Dancing Script', cursive;
+    }
+  
+    .navmenu {
+      margin: 0.5rem; /* Reduce margin for smaller screens */
+      font-size: 0.9rem; /* Adjust font size */
+    }
+  }
+
+  .toggle-button{
+  
+    position: absolute;
+    top: 1.75rem;
+    right: 4rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+
+  .toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    /* z-index: 80; */
+  }
+  @media (max-width: 650){
+    .toggle-button{
+      display: flex;
+  }
+  .navbar{
+    
+    flex-direction: column;
+    
+  }
+  .navbar-links{
+    display: none;
+  }
+  
+  .navmenu {
+    
+    display: flex;
+    flex-direction:column;
+    
+   
+}
+
+.navmenu{
+  align-items: center;
+  text-align: center;
+}
+.navbar-links.active{
+  display: flex;
+  flex-direction:column;
+  margin-top:3rem;
+}
+  }
+
+  
+  
