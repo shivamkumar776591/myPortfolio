@@ -35,20 +35,22 @@ const projects = [
 
 const education = [
   {
-    institution: 'DAV Public School Dhanpura Ara,Bihar',
-    image: college1, // Replace with the actual image path
-    details: '10th Percentage: 91.4%, Year: 2018',
+    institution: 'IIIT Manipur',
+    image: college3, // Replace with the actual image path
+    details: 'Course: B.tech, Branch: CSE, Graduation Year: 2024',
   },
+ 
   {
     institution: 'Delhi Model Public School Kulhariya, Biahr',
     image: college2, // Replace with the actual image path
     details: '12th Percentage: 88.4%, Year: 2020',
   },
   {
-    institution: 'IIIT Manipur',
-    image: college3, // Replace with the actual image path
-    details: 'Course: Computer Science, Graduation Year: 2024',
+    institution: 'DAV Public School Dhanpura Ara,Bihar',
+    image: college1, // Replace with the actual image path
+    details: '10th Percentage: 91.4%, Year: 2018',
   },
+  
 ];
 const internships = [
   {
