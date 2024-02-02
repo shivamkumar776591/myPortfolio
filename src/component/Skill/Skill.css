@@ -72,8 +72,10 @@
     }
     .skillBarText{
             font-size: 2vh;
+            text-align: center;
     }
-    
+    .skillBarImg{
+    margin: auto;
   }
   @media screen and (max-width:204) {
     .skillBar{
@@ -86,3 +88,4 @@
     }
     
   }
+}

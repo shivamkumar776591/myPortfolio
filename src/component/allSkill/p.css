@@ -60,17 +60,9 @@
     .floatingIcons img {
       animation: floatAnimationMobile 4s infinite;
     }
-  
-    @keyframes floatAnimationMobile {
-      0% {
-        transform: translateX(0);
-      }
-      50% {
-        transform: translateX(-20px);
-      }
-      100% {
-        transform: translateX(0);
-      }
+    .floatingIcons{
+      justify-content: center;
     }
+    
   }
   

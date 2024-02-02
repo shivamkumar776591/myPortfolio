@@ -17,19 +17,19 @@ const projects = [
       title: 'Food Delivery Website',
       image: gofood,
       description: 'This is a food delivery application developed using React, Node.js, and MongoDB. It allows users to order food from local restaurants.',
-      skills : 'React, Node.js,Expressjs, Stripe api, MongoDB, Bootstrap',
+      skills : 'React, Node.js, Expressjs, Stripe api, MongoDB, Bootstrap',
     },
     {
       title: 'Hospital Management Sysytem',
       image: hospital,
-      description: 'The hospital management system to manage hospital related works. Features like staff login logout, managing patient records, Booking appointments, and editing staff details etc.',
-      skills: 'Html,CSS,JavaScripts,Bootstrap5,NodeJS,ExpressJs,Mongodb',
+      description: 'The hospital management system to manage hospital related works. It manages the hospital related tasks such as appointment Booking etc.',
+      skills: 'Html, CSS, JavaScripts, Bootstrap5, NodeJS, ExpressJs, Mongodb',
     },
     {
       title: 'Student Management System',
       image: student,
-      description: 'The student management sysytem to manage studemt related works. It has features like the management of student data, courses, grades,editing details etc.',
-      skills: 'Html,CSS,JavaScripts,Bootstrap5,NodeJS,ExpressJs,Mongodb',
+      description: 'The student management sysytem to manage studemt related works. It manages the student related tasks like managing enrollment, marks, studentlist etc. ',
+      skills: 'Html, CSS, JavaScripts, Bootstrap5, NodeJS, ExpressJs, Mongodb',
     },
   ];
 

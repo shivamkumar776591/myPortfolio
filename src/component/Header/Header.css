@@ -1,109 +1,99 @@
-
-
-.navbar {
+.navbar{
     height: 5rem;
     width: 100vw;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
     align-items: center;
-    justify-content: center;
+    /* justify-content: space-between; */
     position: sticky;
     top: 0;
     z-index: 3;
-    background: rgb(30, 30, 30);
-  }
-  
-  .navmenu {
-    margin: 1rem; /* Adjust margin for smaller screens */
-    cursor: pointer;
-    margin-left:4rem;
-    
-    
-    text-decoration: none;
-    color: white; /* Change text color */
-  }
-  
-  .navmenu.active {
-    border-bottom: 2px solid yellow;
-  }
+    background:rgb(30, 30, 30);
+}
 
-  #logo{
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-    margin: .5rem;
-   
-  }
-  #logo p{
+.logo{
+    height: 3rem;
+    width: 4rem;
     font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-  }
-  
-  @media (max-width: 768px) {
-    .navbar {
-      height: auto; /* Let the height adjust based on content */
-      padding: 1rem;
-      font-family: 'Dancing Script', cursive;
-    }
-  
-    .navmenu {
-      margin: 0.5rem; /* Reduce margin for smaller screens */
-      font-size: 0.9rem; /* Adjust font size */
-    }
-  }
+    font-size: x-large;
+}
+.desktopMenuListItem{
+    margin: 2rem;
+    cursor: pointer;
+}
+.desktopMenuListItem:hover{
+    color: yellow;
+    padding-bottom:0.5rem ;
+    border-bottom: 3px solid yellow;
+    width: fit-content;
+}
 
-  .toggle-button{
+.active{
+    color: yellow !important;
+    border-bottom: 3px solid yellow;
+    padding-bottom: 0.5rem;
+}
+.desktopMenu{
+    margin: 0 auto;
+}
+.menu-container {
+    display: flex;
+    align-items: center;
+  }
   
-    position: absolute;
-    top: 1.75rem;
-    right: 4rem;
+  .mobMenu {
     display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 21px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 3rem;
   }
 
-  .toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-    /* z-index: 80; */
-  }
-  @media (max-width: 650){
-    .toggle-button{
-      display: flex;
-  }
-  .navbar{
-    
-    flex-direction: column;
-    
-  }
-  .navbar-links{
-    display: none;
-  }
-  
-  .navmenu {
-    
+    /* display: none; */
+    /* object-fit: cover;
+    height: 1.8rem;
+    position: absolute;
+    right: 3rem; */
+    .line {
+        width: 100%;
+        height: 3px;
+        background-color:yellow;
+      }
+
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40,40,40);
+    border-radius: 1rem;
+}
+.listItem{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+    text-align: center;
+
     
-   
 }
 
-.navmenu{
-  align-items: center;
-  text-align: center;
-}
-.navbar-links.active{
-  display: flex;
-  flex-direction:column;
-  margin-top:3rem;
-}
-  }
+@media screen and (max-width:720px) {
+    .mobMenu{
+        display: flex;
 
-  
-  
+    }
+    .desktopMenu{
+        display: none;
+    }
+}

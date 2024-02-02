@@ -80,6 +80,7 @@
 .worksImgContainer {
     position: relative;
     overflow: hidden;
+    margin: 1rem;
 }
 
 .worksImg {
@@ -143,7 +144,9 @@
     .image-description,
     .image-skills {
         margin-top: 0.3rem;
+
     }
+    
 }
 
 
