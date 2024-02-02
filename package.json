@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel src/index.html",
+    "start": "react-scripts-start",
     "predeploy":"npm run build",
     "deploy": "gh-pages -d build",
     "build": "parcel build src/index.html",
