@@ -11,7 +11,7 @@ const Contact = () =>{
 
     const handleButtonClick = () => {
         // Replace 'YOUR_GOOGLE_DRIVE_LINK' with the actual link to your resume file
-        const resumeDriveLink = 'https://drive.google.com/file/d/13u8N-ZN57a-QzsXzIBuNCoP461yrfbVa/view?usp=sharing';
+        const resumeDriveLink = 'https://drive.google.com/file/d/1BDmDHbGHWIvoHC5tjifbN1VTu6MS6M_T/view?usp=sharing';
         
         // Open the resume link in a new tab/window
         window.open(resumeDriveLink, '_blank');
