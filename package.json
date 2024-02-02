@@ -1,12 +1,15 @@
 {
+  "homepage": "https://github.com/shivamkumar776591/myPortfolio",
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "start": "parcel src/index.html",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "build": "parcel build src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "author": "",
   "license": "ISC",
