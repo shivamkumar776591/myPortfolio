@@ -3,13 +3,16 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "start": "react-scripts-start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts-build",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  
+    "scripts": {
+      "start": "parcel src/index.html",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build",
+      "build": "parcel build src/index.html",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+  
+  
   "author": "",
   "license": "ISC",
   "dependencies": {
