@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll'; // Correct import
 import "./Header.css";
-import menu from "../../images/menu.png"
+
 import { useState } from 'react';
 
 const Header = () =>{
