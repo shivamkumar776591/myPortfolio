@@ -18,9 +18,9 @@ const Header = () =>{
       {/* <img src= {menu} alt="Menu" className="mobMenu" onClick={()=>setShowMenu(!showMenu)}></img> */}
       <div class="menu-container">
   <div class="mobMenu" onClick={()=>setShowMenu(!showMenu)}>
-    <span class="line"></span>
-    <span class="line"></span>
-    <span class="line"></span>
+    <span className="line"></span>
+    <span className="line"></span>
+    <span className="line"></span>
   </div>
   </div>
       <div className='navMenu' style={{display: showMenu?'flex':'none'}}>

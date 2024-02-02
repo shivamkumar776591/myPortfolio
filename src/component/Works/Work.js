@@ -113,7 +113,7 @@ const Work = () => {
               <div className='worksImgOverlay'>
                 <div className='overlayContent'>
                   <div className='image-title'>{project.title}</div>
-                  <div className='image-description'>{project.description}</div>
+                  <div className='image-description'><p>{project.description}</p></div>
                   <div className='image-skills'><span className='skillUsed'>Skills:</span>{project.skills}</div>
                 </div>
               </div>

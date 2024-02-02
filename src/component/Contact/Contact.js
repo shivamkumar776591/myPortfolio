@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import './Contact.css'
 import indeed from './indeed.png'
 import internsala from './intersala.png'
 import linkedin from './linkedin (1).png'
 import github from './github.png'
 import resume from './resumeicon.jpg'
+import emailjs from '@emailjs/browser';
 
 const Contact = () =>{
 
@@ -15,14 +16,31 @@ const Contact = () =>{
         // Open the resume link in a new tab/window
         window.open(resumeDriveLink, '_blank');
       };
+
+      const form = useRef();
+      const to_name = "Shivam";
+      const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_zs3otmp', 'template_i0yasw5', form.current, 'njO7BEr8j6fEdFC2N')
+          .then((result) => {
+              console.log(result.text);
+              e.target.reset();
+              alert("Email Sent!")
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+    
     return(
+
         <div id = "contact">
             <h1 className='contactPageTitle'>Contact Me</h1>
             <span className='contactDesc'>Please fill out the form below for contact</span>
-            <form className='contactForm'>
-                <input placeholder='Your Name' className='name' type='text'></input>
-                <input type='email' className='email' placeholder='Your Email'/>
-                <textarea name='message' rows="5" placeholder='Your Message' className='msg'></textarea>
+            <form className='contactForm' ref={form} onSubmit={sendEmail}>
+                <input placeholder='Your Name' className='name' type='text' name='from_name'></input>
+                <input type='email' className='email' placeholder='Your Email' name='from_email'/>
+                <textarea name='message' rows="5" placeholder='Your Message' className='msg'  ></textarea>
                 <button type='submit' value="send" className='submitBtn'>Submit </button>
                 <div className='links'>
                     <img src={linkedin} className='link' onClick={()=>{
