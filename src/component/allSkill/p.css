@@ -1,0 +1,68 @@
+/* p.css */
+
+.skillContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .skillsHeading {
+    margin-top:3rem ;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .floatingIcons {
+    text-align: center;
+    position: relative;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .floatingIcons img {
+    position: relative;
+    animation: floatAnimation 1s infinite;
+  }
+  .skillIconWrapper {
+    margin: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .skillIconWrapper {
+      margin: 1rem;
+    }
+  }
+  
+  /* @keyframes floatAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translatex(-20px);
+    }
+    100% {
+      transform: translatex(0);
+    }
+  } */
+  .skillLogo{
+    width: 5rem;
+    height:5rem;
+    margin-left: 3vw;
+   
+  }
+  
+  /* Media Query for mobile responsiveness */
+  @media screen and (max-width: 600px) {
+    .floatingIcons img {
+      animation: floatAnimationMobile 4s infinite;
+    }
+    .floatingIcons{
+      justify-content: center;
+    }
+    
+  }
+  

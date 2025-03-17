@@ -1,0 +1,91 @@
+/* Skill.css */
+
+#skills {
+    overflow: hidden; /* You may need to change this to overflow: auto */
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .skillTitle{
+    font-size: 3rem;
+    font-weight: 300;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .skillDesc{
+    font-weight: 400;
+    font-size: 1.05rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+  }
+  
+  .skillBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+    overflow: hidden; /* Add this line to handle overflow */
+  }
+  
+  .skillBar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+    
+  }
+  
+  .skillBarText {
+    flex: 1; /* This ensures that the text takes remaining space */
+  }
+  
+  .skillBarImg {
+    object-fit: cover;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+    border-radius: 6rem;
+  }
+  
+  .skillBarText > p {
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skillBarText > p {
+      font-size: 2vw;
+    }
+  }
+
+  @media screen and (max-width:410px) {
+    .skillBar{
+        flex-direction: column;
+
+    }
+    .skillBarText{
+            font-size: 2vh;
+            text-align: center;
+    }
+    .skillBarImg{
+    margin: auto;
+  }
+  @media screen and (max-width:204) {
+    .skillBar{
+        flex-direction: column;
+
+    }
+    .skillBarText{
+            margin: 8px;
+            font-size: 1.4vh;
+    }
+    
+  }
+}

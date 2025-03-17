@@ -1,0 +1,115 @@
+/* Intro.css */
+
+.photo {
+    position: absolute;
+    z-index: -8;
+    top: 0;
+    object-fit: cover;
+    height: 100vh;
+    right: 0;
+  }
+  
+  #intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 2.7rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+  }
+  
+  .introName {
+    color: yellow;
+  }
+  
+  .introPara {
+    font-size: medium;
+    font-weight: 300;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    z-index: 1;
+  }
+  
+  @media screen and (max-width: 840px) {
+    .photo {
+      position: absolute;
+      top: 10%;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+  
+    .introContent {
+      font-size: 10vw;
+    }
+  
+    .hello {
+      font-size: 4.5vw;
+    }
+  }
+
+  /* Intro.css */
+
+/* Intro.css */
+
+.introText .animationText {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.introText .animationText > span {
+  position: absolute;
+  opacity: 0;
+  animation: appearAndDisappear 5s infinite;
+}
+
+.introText .animationText > span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.introText .animationText > span:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.introText .animationText > span:nth-child(3) {
+  animation-delay: 4s;
+}
+
+@keyframes appearAndDisappear {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+}
+
+
+  

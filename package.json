@@ -1,0 +1,27 @@
+{
+  "homepage": "https://github.com/shivamkumar776591/myPortfolio",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emailjs/browser": "^3.12.1",
+    "gh-pages": "^6.1.1",
+    "parcel": "^2.11.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scroll": "^1.9.0",
+    "typed.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
