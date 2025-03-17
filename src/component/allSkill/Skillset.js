@@ -1,8 +1,8 @@
 import React from 'react';
-import './p.css';  // Corrected the import
+import './p.css';  
 import c from './c.png'
 import cpp from './c++.png'
-import express from './express-JS.png'
+// import express from './express-JS.png'
 import react from './reactjs.webp'
 import mongodb  from './mongodb.png'
 import css from './CSS.jpg'
@@ -11,14 +11,14 @@ import javascript from './javascript.webp'
 import nodejs from './nodejs.png';
 import bootstrap from './bootstrap.png'
 import github from './github-logo.png';
-// import tailwind from './tailwindcss.png'
+
 
 const Skillset = () => {
   return (
     <div className='skillContainer'>
       <h2 className='skillsHeading'>Skills</h2>
       <div className='floatingIcons'>
-        {/* Include your skill icons with appropriate alt text */}
+ 
         <div className='skillIconWrapper'>
           <img className='skillLogo' src={c} alt='C' />
         </div>
